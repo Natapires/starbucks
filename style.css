@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 
+classe no html - css é tratado com um .
+id no html - css é tratado com #
+*/
+
+div.center{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+header{ /*parte de cima do site*/
+    display: flex;
+    flex-direction: row; /*home, menu, etc, estão em linhas*/
+    align-items: center; /*alinhamento vertical*/
+    justify-content: space-between; /*colocou na lateral o home, menu, etc*/
+    margin: 20px; /*deu uma margem encima*/
+    border: 1px;
+
+}
+
+header img{
+    max-width: 80px; /*comprimento maximo de 80px*/
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+header nav a{
+    color: #555;
+    padding: 10px;
+}
+
+header nav a:hover{
+    background-color: #017143; /*fundo das letras do home,menu, etc*/
+    color: #fff; /*cor da letra do home,menu, etc*/
+    border-radius: 20px; /*arredondamento na borda do home, menu,etc*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+main{
+    position: relative;
+    /*border: 1px dashed;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main section.left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+main section.left h1{
+    font-size: 3em;
+    font-weight: 500;
+    color: #333;
+}
+
+main section.left h1 span{
+    color: #017143;
+    font-weight: 900;
+}
+
+main section.left p{
+    color: #333;
+}
+
+main section.left button{
+    background-color: #017143;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 40px;
+    width: 30%;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1.5;
+    font-weight: 500;
+}
+
+main section.left button:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+main section.right img{
+    max-width: 330px;
+    /*Superio / direito / inferior / esquerda*/
+    margin: 40px 60px 80px 60px;
+}
+
+div.circle{
+    /*top, right, bottom, left*/
+    position: absolute;
+    background-color: #017143;
+    width: 500px;
+    height: 82%;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 100%;
+    z-index: -1;
+}
+
+div.social{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    right: 2%;
+}
+
+div.social img{
+    max-width: 20px;
+    max-height: 25px;
+    cursor: pointer;
+}
+
+div.social img:hover{
+    transform: translateX(15px);
+    transition: .5s;
+}
+
+div.thumbnails{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    bottom: 5%;
+    left: calc(50% - 95px);
+}
+
+div.thumbnails img{
+    max-width: 50px;
+    cursor: pointer;
+}
+
+div.thumbnails img:hover{
+    transform: translateY(-15px);
+    transition: .5s;
+}
